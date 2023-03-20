@@ -29,6 +29,9 @@ float Process::CpuUtilization() {
 string Process::Command() {
   if (command_.empty()) {
     command_ = LinuxParser::Command(pid_);
+    if (command_.length() > 40) {
+      command_ = command_.substr(0, 40) + "...";
+    }
   }
   return command_;
 }

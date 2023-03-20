@@ -17,6 +17,13 @@ const std::string kMeminfoFilename{"/meminfo"};
 const std::string kVersionFilename{"/version"};
 const std::string kOSPath{"/etc/os-release"};
 const std::string kPasswordPath{"/etc/passwd"};
+const std::string kMemTotalKey{"MemTotal:"};
+const std::string kMemFreeKey{"MemFree:"};
+const std::string kCpuKey{"cpu"};
+const std::string kTotalProcessesKey{"processes"};
+const std::string kProcessesRunningKey{"procs_running"};
+const std::string kProcessRamKey{"VmRSS:"};
+const std::string kUidKey{"Uid:"};
 
 // System
 float MemoryUtilization();
